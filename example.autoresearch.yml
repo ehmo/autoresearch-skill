@@ -1,0 +1,24 @@
+# Example autoresearch config
+# Copy to your project root as .autoresearch.yml
+
+# Override the auto-detected test command
+test_command: "make test"
+
+# Limit which files the teams examine and modify
+# include:
+#   - "src/"
+#   - "lib/"
+# exclude:
+#   - "vendor/"
+#   - "generated/"
+#   - "node_modules/"
+
+# Stop after this many cycles (default: runs until diminishing returns)
+# max_cycles: 10
+
+# Which teams to run (default: all three)
+# Minimum: [red, green] — red alone won't fix anything
+# teams:
+#   - red
+#   - green
+#   - refactor
