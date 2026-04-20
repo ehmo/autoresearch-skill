@@ -1,4 +1,5 @@
 ---
+name: autoresearch
 description: "Autonomous multi-team codebase improvement with narrow (goal-directed) and broad (hypothesis-divergent) modes"
 version: 2.0.0
 ---

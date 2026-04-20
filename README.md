@@ -38,7 +38,33 @@ Your results will depend on the size, test coverage, and existing quality of the
 
 ## Install
 
-### Claude Code
+### Via `npx skills` (recommended)
+
+If you have Node installed, install with one command — no cloning, no symlinks:
+
+```bash
+npx skills add ehmo/autoresearch
+```
+
+That's it. The CLI fetches the repo, discovers `skills/autoresearch/SKILL.md` from its frontmatter `name:` field, and installs it into the right directory for your agent. Works with Claude Code, Cursor, Codex, and other agents the `skills` CLI supports.
+
+Install only the skill (no slash command) for a specific agent:
+
+```bash
+npx skills add ehmo/autoresearch -a claude-code
+```
+
+Useful companion commands:
+
+```bash
+npx skills list                    # show installed skills
+npx skills update ehmo/autoresearch
+npx skills remove ehmo/autoresearch
+```
+
+### Claude Code (manual install)
+
+If you prefer a local clone and symlinks:
 
 ```bash
 git clone git@github.com:ehmo/autoresearch.git
