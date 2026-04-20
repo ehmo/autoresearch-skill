@@ -1,6 +1,10 @@
 # Example autoresearch config
 # Copy to your project root as .autoresearch.yml
 
+# Default mode when none is specified on the command line.
+# Valid: narrow, broad, sweep
+# mode: sweep
+
 # Override the auto-detected test command
 test_command: "make test"
 
@@ -22,3 +26,7 @@ test_command: "make test"
 #   - red
 #   - green
 #   - refactor
+
+# Broad mode only: run hypothesis tracks concurrently instead of sequentially.
+# Requires a host that supports parallel sub-agents. Tracks stay on independent branches.
+# parallel: false
